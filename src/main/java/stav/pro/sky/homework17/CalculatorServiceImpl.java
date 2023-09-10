@@ -2,7 +2,6 @@ package stav.pro.sky.homework17;
 
 import org.springframework.stereotype.Service;
 
-
 @Service
 
 public class CalculatorServiceImpl implements CalculatorService {
