@@ -1,30 +1,29 @@
 package stav.pro.sky.homework17;
 
 import org.springframework.stereotype.Service;
+import stav.pro.sky.homework17.service.CalculatorService;
 
 @Service
 
 public class CalculatorServiceImpl implements CalculatorService {
 
-    public int calculatePlus(int num1, int num2) {
-        int res = num1 + num2;
-        return res;
+    @Override
+    public int plus(int num1, int num2) {
+        return num1 + num2;
     }
 
-    public int calculateMinus(int num1, int num2) {
-        int res = num1 - num2;
-        return res;
+    @Override
+    public int minus(int num1, int num2) {
+        return num1 - num2;
     }
 
-    public int calculateMultiply(int num1, int num2) {
-        int res = num1 * num2;
-        return res;
+    @Override
+    public int multiply(int num1, int num2) {
+        return num1 * num2;
     }
 
-    public int calculateDivide(int num1, int num2) {
-        int res = num1 / num2;
-        if (res == 0)
-            System.out.println(1);
-        return res;
+    @Override
+    public int divide(int num1, int num2) {
+        return num1 / num2;
     }
 }
